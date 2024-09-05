@@ -11,14 +11,14 @@ public class Problem3 {
         List<Integer> numbers = new ArrayList<Integer>();
         while (run) {
             try {
-                Scanner myObj = new Scanner(System.in);
+                Scanner scanner = new Scanner(System.in);
                 System.out.print("Input : ");
-                int inNumber = myObj.nextInt();
+                int inNumber = scanner.nextInt();
                 numbers.add(inNumber);
 
-                Scanner myObj2 = new Scanner(System.in);
+                scanner = new Scanner(System.in);
                 System.out.print("Continue? (y/n) ");
-                run = myObj2.nextLine().equals("y");
+                run = scanner.nextLine().equals("y");
             } catch (Exception e) {
                 System.out.println("Error : " + e);
             }

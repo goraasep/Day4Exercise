@@ -9,9 +9,9 @@ public class Problem1 {
         System.out.print("Input : ");
         try {
             int inNumber = myObj.nextInt();
-            for (int i = 0; i < inNumber; i++) {
+            for (int i = 1; i <= inNumber; i++) {
                 for (int j = 1; j <= inNumber; j++) {
-                    System.out.print(j + i + " ");
+                    System.out.print(j * i + "\t");
                 }
                 System.out.println();
             }
